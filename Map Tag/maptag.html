@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Tag</title>
+
+    <style>
+        .map-tag {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map-tag">
+        <img src="images/workplace.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area onclick="click_1()" target="" alt="" title="" href=""
+                coords="29,43,42,188,29,344,133,348,262,348,275,346,263,188,274,47,266,40" shape="poly">
+            <area onclick="click_2()" target="" alt="" title="" href="" coords="288,174,328,170,334,244,291,244" shape="poly">
+            <area onclick="click_3()" target="" alt="" title="" href="" coords="337,301,45" shape="circle">
+        </map>
+    </div>
+
+    <script>
+        function click_1() {
+            alert("You clicked Leptop");
+        }
+        function click_2() {
+            alert("You clicked Phone");
+        }
+        function click_3() {
+            alert("You clicked Coffee");
+        }
+    </script>
+</body>
+
+</html>
